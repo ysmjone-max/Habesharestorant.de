@@ -27,7 +27,7 @@ echo [2/3] Saving changes...
 git commit -m "Automatic website update"
 
 echo [3/3] Uploading to GitHub...
-git push origin main
+git push origin main --force
 
 echo.
 echo ===================================================
