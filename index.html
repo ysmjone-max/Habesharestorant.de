@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Habesha Restaurant - Authentic Ethiopian & Eritrean Cuisine in Dresden</title>
-  <meta name="description" content="Experience authentic Ethiopian and Eritrean cuisine at Habesha Restaurant in Dresden. Enjoy Injera, Zigni Dorho, and vegan specialties.">
+  <title>Habesha Restaurant - Authentische äthiopische & eritreische Küche in Dresden</title>
+  <meta name="description" content="Erlebe authentische äthiopische und eritreische Küche im Habesha Restaurant in Dresden. Genieße traditionelles Injera, Zigni Dorho und vegane Spezialitäten.">
+  <meta name="keywords" content="Habesha, Restaurant, Dresden, Äthiopisches Essen, Eritreisches Essen, Injera, Zigni, Vegan, Afrikanische Küche">
+  <meta property="og:title" content="Habesha Restaurant Dresden - Authentische afrikanische Küche">
+  <meta property="og:description" content="Erlebe authentische äthiopische und eritreische Küche im Habesha Restaurant in Dresden.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -18,10 +22,11 @@
       <span>RESTAURANT</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#location">Location</a></li>
-      <li><a href="#delivery" class="btn-primary">Order Delivery</a></li>
+      <li><a href="#about" class="lang" data-de="Über uns" data-en="About">Über uns</a></li>
+      <li><a href="#menu" class="lang" data-de="Speisekarte" data-en="Menu">Speisekarte</a></li>
+      <li><a href="#location" class="lang" data-de="Standort" data-en="Location">Standort</a></li>
+      <li><a href="#delivery" class="btn-primary lang" data-de="Lieferung bestellen" data-en="Order Delivery">Lieferung bestellen</a></li>
+      <li><button id="langToggle" class="lang-btn">🇬🇧 EN</button></li>
     </ul>
     <div class="hamburger">
       <div class="bar"></div>
@@ -34,11 +39,11 @@
   <header class="hero" id="home">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1 class="hero-title">Experience the Taste of <span class="highlight">Africa</span></h1>
-      <p class="hero-subtitle">Authentic Ethiopian & Eritrean Cuisine in the Heart of Dresden.</p>
+      <h1 class="hero-title"><span class="lang" data-de="Erlebe den Geschmack von" data-en="Experience the Taste of">Erlebe den Geschmack von</span> <span class="highlight">Afrika</span></h1>
+      <p class="hero-subtitle lang" data-de="Authentische äthiopische & eritreische Küche im Herzen von Dresden." data-en="Authentic Ethiopian & Eritrean Cuisine in the Heart of Dresden.">Authentische äthiopische & eritreische Küche im Herzen von Dresden.</p>
       <div class="hero-actions">
-        <a href="#menu" class="btn-primary">Explore Menu</a>
-        <a href="#location" class="btn-secondary">Visit Us</a>
+        <a href="#menu" class="btn-primary lang" data-de="Speisekarte ansehen" data-en="Explore Menu">Speisekarte ansehen</a>
+        <a href="#location" class="btn-secondary lang" data-de="Besuche uns" data-en="Visit Us">Besuche uns</a>
       </div>
     </div>
   </header>
@@ -48,108 +53,107 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-text">
-          <h2 class="section-title">A Journey of Flavors</h2>
-          <p>At Habesha Restaurant, we bring the rich culinary traditions of Ethiopia and Eritrea to Dresden. Our dishes are meant to be shared, fostering a sense of community and togetherness. From our freshly baked Injera to our rich, aromatic stews, every bite is a celebration of authentic flavors.</p>
+          <h2 class="section-title lang" data-de="Eine Reise der Aromen" data-en="A Journey of Flavors">Eine Reise der Aromen</h2>
+          <p class="lang" data-de="Im Habesha Restaurant bringen wir die reichen kulinarischen Traditionen Äthiopiens und Eritreas nach Dresden. Unsere Gerichte sind dazu gedacht, geteilt zu werden und ein Gefühl von Gemeinschaft zu fördern. Von unserem frisch gebackenen Injera bis zu unseren reichhaltigen, aromatischen Eintöpfen ist jeder Bissen ein Fest authentischer Aromen." data-en="At Habesha Restaurant, we bring the rich culinary traditions of Ethiopia and Eritrea to Dresden. Our dishes are meant to be shared, fostering a sense of community and togetherness. From our freshly baked Injera to our rich, aromatic stews, every bite is a celebration of authentic flavors.">Im Habesha Restaurant bringen wir die reichen kulinarischen Traditionen Äthiopiens und Eritreas nach Dresden. Unsere Gerichte sind dazu gedacht, geteilt zu werden und ein Gefühl von Gemeinschaft zu fördern. Von unserem frisch gebackenen Injera bis zu unseren reichhaltigen, aromatischen Eintöpfen ist jeder Bissen ein Fest authentischer Aromen.</p>
         </div>
         <div class="about-image glass-panel">
-          <img src="Image/imgi_4_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Authentic Ethiopian Food Spread" />
+          <img src="Image/imgi_4_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Authentic Ethiopian Food Spread" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Menu Highlights Section -->
   <!-- Full Menu Section -->
   <section class="menu" id="menu">
     <div class="container">
-      <h2 class="section-title text-center">Our Authentic Menu</h2>
+      <h2 class="section-title text-center lang" data-de="Unsere authentische Speisekarte" data-en="Our Authentic Menu">Unsere authentische Speisekarte</h2>
       
       <!-- Category 1 -->
-      <h3 style="color: var(--color-primary); font-size: 1.8rem; margin: 3rem 0 1.5rem 0; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Lieblingsartikel (Popular Items)</h3>
+      <h3 class="lang" data-de="Lieblingsartikel (Popular Items)" data-en="Popular Items" style="color: var(--color-primary); font-size: 1.8rem; margin: 3rem 0 1.5rem 0; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Lieblingsartikel (Popular Items)</h3>
       <div class="menu-grid">
         
         <div class="menu-item glass-card">
           <div class="menu-image">
-             <img src="Image/imgi_5_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Beye Aynetu" />
+             <img src="Image/imgi_5_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Beye Aynetu" loading="lazy" decoding="async" />
           </div>
           <div class="menu-details">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
               <h3 style="margin-bottom: 0;">Beye Aynetu</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€13.00</span>
             </div>
-            <p>Großer gemischter Teller mit vegan Injera, Allicha, Shiro, 3x Tuntumo, Hamli, Rotkohl und Salat.</p>
+            <p class="lang" data-de="Großer gemischter Teller mit vegan Injera, Allicha, Shiro, 3x Tuntumo, Hamli, Rotkohl und Salat." data-en="Large mixed plate with vegan Injera, Allicha, Shiro, 3x Tuntumo, Hamli, red cabbage and salad.">Großer gemischter Teller mit vegan Injera, Allicha, Shiro, 3x Tuntumo, Hamli, Rotkohl und Salat.</p>
           </div>
         </div>
 
         <div class="menu-item glass-card">
           <div class="menu-image">
-             <img src="Image/imgi_9_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Zigni Dorho" />
+             <img src="Image/imgi_9_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Zigni Dorho" loading="lazy" decoding="async" />
           </div>
           <div class="menu-details">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
               <h3 style="margin-bottom: 0;">Zigni Dorho</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€13.00</span>
             </div>
-            <p>Mit Hähnchenkeulen und Ei in pikanter Soße.</p>
+            <p class="lang" data-de="Mit Hähnchenkeulen und Ei in pikanter Soße." data-en="With chicken legs and egg in a spicy sauce.">Mit Hähnchenkeulen und Ei in pikanter Soße.</p>
           </div>
         </div>
 
         <div class="menu-item glass-card">
           <div class="menu-image">
-             <img src="Image/imgi_8_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Zigni Berei" />
+             <img src="Image/imgi_8_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Zigni Berei" loading="lazy" decoding="async" />
           </div>
           <div class="menu-details">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
               <h3 style="margin-bottom: 0;">Zigni Berei</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€13.00</span>
             </div>
-            <p>Scharf. Rindfleisch gebraten in pikanter Soße.</p>
+            <p class="lang" data-de="Scharf. Rindfleisch gebraten in pikanter Soße." data-en="Spicy. Fried beef in a spicy sauce.">Scharf. Rindfleisch gebraten in pikanter Soße.</p>
           </div>
         </div>
 
         <div class="menu-item glass-card">
           <div class="menu-image">
-             <img src="Image/imgi_6_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Tibsi Beggie" />
+             <img src="Image/imgi_6_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Tibsi Beggie" loading="lazy" decoding="async" />
           </div>
           <div class="menu-details">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
               <h3 style="margin-bottom: 0;">Tibsi Beggie</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€14.00</span>
             </div>
-            <p>Scharf. Lammfleisch gebraten in pikanter Soße.</p>
+            <p class="lang" data-de="Scharf. Lammfleisch gebraten in pikanter Soße." data-en="Spicy. Fried lamb in a spicy sauce.">Scharf. Lammfleisch gebraten in pikanter Soße.</p>
           </div>
         </div>
 
         <div class="menu-item glass-card">
           <div class="menu-image">
-             <img src="Image/imgi_10_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Shikla" />
+             <img src="Image/imgi_10_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Shikla" loading="lazy" decoding="async" />
           </div>
           <div class="menu-details">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
               <h3 style="margin-bottom: 0;">Shikla</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€15.00</span>
             </div>
-            <p>Gebratenes Rindfleisch mit Röstgemüse.</p>
+            <p class="lang" data-de="Gebratenes Rindfleisch mit Röstgemüse." data-en="Fried beef with roasted vegetables.">Gebratenes Rindfleisch mit Röstgemüse.</p>
           </div>
         </div>
 
         <div class="menu-item glass-card">
           <div class="menu-image">
-             <img src="Image/imgi_4_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Spezialität des Hauses" />
+             <img src="Image/imgi_4_7f4ae9ca0446cbc23e71d8d395a98428.jpg" alt="Spezialität des Hauses" loading="lazy" decoding="async" />
           </div>
           <div class="menu-details">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
               <h3 style="margin-bottom: 0;">Spezialität des Hauses</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€16.00</span>
             </div>
-            <p>Gemischter Teller mit Salat, Gemüse, Kartoffeln, Rindfleisch und Soßen mit Injera.</p>
+            <p class="lang" data-de="Gemischter Teller mit Salat, Gemüse, Kartoffeln, Rindfleisch und Soßen mit Injera." data-en="Mixed plate with salad, vegetables, potatoes, beef and sauces with Injera.">Gemischter Teller mit Salat, Gemüse, Kartoffeln, Rindfleisch und Soßen mit Injera.</p>
           </div>
         </div>
 
       </div>
 
       <!-- Category 2 -->
-      <h3 style="color: var(--color-primary); font-size: 1.8rem; margin: 3rem 0 1.5rem 0; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Vegetarisch & Vegan</h3>
+      <h3 class="lang" data-de="Vegetarisch & Vegan" data-en="Vegetarian & Vegan" style="color: var(--color-primary); font-size: 1.8rem; margin: 3rem 0 1.5rem 0; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Vegetarisch & Vegan</h3>
       <div class="menu-grid">
         
         <div class="menu-item glass-card" style="padding: 1.5rem;">
@@ -158,7 +162,7 @@
               <h3 style="margin-bottom: 0;">Shiro</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€9.00</span>
             </div>
-            <p>Gemahlene Kichererbsen mit Gewürzen und afrikanischer Butter.</p>
+            <p class="lang" data-de="Gemahlene Kichererbsen mit Gewürzen und afrikanischer Butter." data-en="Ground chickpeas with spices and African butter.">Gemahlene Kichererbsen mit Gewürzen und afrikanischer Butter.</p>
           </div>
         </div>
 
@@ -168,7 +172,7 @@
               <h3 style="margin-bottom: 0;">Tuntumo</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€9.00</span>
             </div>
-            <p>Rotes Linsengericht.</p>
+            <p class="lang" data-de="Rotes Linsengericht." data-en="Red lentil dish.">Rotes Linsengericht.</p>
           </div>
         </div>
 
@@ -178,7 +182,7 @@
               <h3 style="margin-bottom: 0;">Allicha (Vegan)</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€9.00</span>
             </div>
-            <p>Gemüsecurry mit grünen Bohnen, Kartoffeln, Weißkohl, Karotten und Paprika.</p>
+            <p class="lang" data-de="Gemüsecurry mit grünen Bohnen, Kartoffeln, Weißkohl, Karotten und Paprika." data-en="Vegetable curry with green beans, potatoes, cabbage, carrots and peppers.">Gemüsecurry mit grünen Bohnen, Kartoffeln, Weißkohl, Karotten und Paprika.</p>
           </div>
         </div>
 
@@ -188,14 +192,14 @@
               <h3 style="margin-bottom: 0;">Timtimo Birsen (Vegan)</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€5.00</span>
             </div>
-            <p>Mit roten Linsen.</p>
+            <p class="lang" data-de="Mit roten Linsen." data-en="With red lentils.">Mit roten Linsen.</p>
           </div>
         </div>
 
       </div>
 
       <!-- Category 3 -->
-      <h3 style="color: var(--color-primary); font-size: 1.8rem; margin: 3rem 0 1.5rem 0; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Salate & Vorspeisen</h3>
+      <h3 class="lang" data-de="Salate & Vorspeisen" data-en="Salads & Appetizers" style="color: var(--color-primary); font-size: 1.8rem; margin: 3rem 0 1.5rem 0; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Salate & Vorspeisen</h3>
       <div class="menu-grid">
 
         <div class="menu-item glass-card" style="padding: 1.5rem;">
@@ -204,7 +208,7 @@
               <h3 style="margin-bottom: 0;">Habesha Alicha Salat</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€6.50</span>
             </div>
-            <p>Mit Feldsalat, Kartoffeln, gekochtem Ei, Peperoni, Oliven, Gurken, Tomaten, Weißkohl und Essig-Öl-Dressing.</p>
+            <p class="lang" data-de="Mit Feldsalat, Kartoffeln, gekochtem Ei, Peperoni, Oliven, Gurken, Tomaten, Weißkohl und Essig-Öl-Dressing." data-en="With lamb's lettuce, potatoes, boiled egg, peppers, olives, cucumber, tomatoes, cabbage and vinegar-oil dressing.">Mit Feldsalat, Kartoffeln, gekochtem Ei, Peperoni, Oliven, Gurken, Tomaten, Weißkohl und Essig-Öl-Dressing.</p>
           </div>
         </div>
 
@@ -214,7 +218,7 @@
               <h3 style="margin-bottom: 0;">Katena</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€3.50</span>
             </div>
-            <p>Scharf. Injera mit eritreischer Butter und scharfer Paprika.</p>
+            <p class="lang" data-de="Scharf. Injera mit eritreischer Butter und scharfer Paprika." data-en="Spicy. Injera with Eritrean butter and hot paprika.">Scharf. Injera mit eritreischer Butter und scharfer Paprika.</p>
           </div>
         </div>
 
@@ -224,14 +228,14 @@
               <h3 style="margin-bottom: 0;">Alicha Suppe</h3>
               <span style="color: var(--color-primary); font-weight: bold;">€5.00</span>
             </div>
-            <p>Kräftig gewürzt. Gemüsesuppe mit Bohnen, Karotten, Kartoffel und Weißkohl.</p>
+            <p class="lang" data-de="Kräftig gewürzt. Gemüsesuppe mit Bohnen, Karotten, Kartoffel und Weißkohl." data-en="Strongly spiced. Vegetable soup with beans, carrots, potato and cabbage.">Kräftig gewürzt. Gemüsesuppe mit Bohnen, Karotten, Kartoffel und Weißkohl.</p>
           </div>
         </div>
 
       </div>
 
       <div class="text-center mt-4" style="margin-top: 4rem;">
-        <p class="note" style="font-size: 1.1rem;">* All our main dishes are served with traditional Injera flatbread.</p>
+        <p class="note lang" data-de="* Alle unsere Hauptgerichte werden mit traditionellem Injera-Fladenbrot serviert." data-en="* All our main dishes are served with traditional Injera flatbread." style="font-size: 1.1rem;">* Alle unsere Hauptgerichte werden mit traditionellem Injera-Fladenbrot serviert.</p>
       </div>
     </div>
   </section>
@@ -240,26 +244,26 @@
   <section class="location" id="location">
     <div class="container location-grid">
       <div class="location-info glass-panel">
-        <h2 class="section-title">Visit Us</h2>
+        <h2 class="section-title lang" data-de="Besuche uns" data-en="Visit Us">Besuche uns</h2>
         <ul class="info-list">
           <li>
-            <strong>Address:</strong><br>
+            <strong class="lang" data-de="Adresse:" data-en="Address:">Adresse:</strong><br>
             Alaunstr. 39, 01099 Dresden
           </li>
           <li>
-            <strong>Phone:</strong><br>
+            <strong class="lang" data-de="Telefon:" data-en="Phone:">Telefon:</strong><br>
             01521 1256456
           </li>
           <li>
-            <strong>Opening Hours:</strong><br>
-            Mon - Thu: 11:00 - 22:00<br>
-            Fri - Sun: 11:00 - 00:00
+            <strong class="lang" data-de="Öffnungszeiten:" data-en="Opening Hours:">Öffnungszeiten:</strong><br>
+            <span class="lang" data-de="Mo - Do:" data-en="Mon - Thu:">Mo - Do:</span> 11:00 - 22:00<br>
+            <span class="lang" data-de="Fr - So:" data-en="Fri - Sun:">Fr - So:</span> 11:00 - 00:00
           </li>
         </ul>
       </div>
       <div class="delivery-info glass-panel" id="delivery">
-        <h2 class="section-title">Order Delivery</h2>
-        <p>Enjoy Habesha Restaurant from the comfort of your home. Find us on your favorite delivery platforms:</p>
+        <h2 class="section-title lang" data-de="Lieferung bestellen" data-en="Order Delivery">Lieferung bestellen</h2>
+        <p class="lang" data-de="Genieße das Habesha Restaurant bequem von zu Hause aus. Finde uns auf deinen bevorzugten Lieferplattformen:" data-en="Enjoy Habesha Restaurant from the comfort of your home. Find us on your favorite delivery platforms:">Genieße das Habesha Restaurant bequem von zu Hause aus. Finde uns auf deinen bevorzugten Lieferplattformen:</p>
         <div class="delivery-links">
           <a href="https://www.ubereats.com/de-en/store/habesha-restaurant/iZvXe-h8Utq8bEvKTrVVAA" target="_blank" class="delivery-btn">Uber Eats</a>
           <a href="#" class="delivery-btn">Wolt</a>
@@ -273,7 +277,7 @@
   <footer class="footer">
     <div class="container text-center">
       <h2>HABESHA RESTAURANT</h2>
-      <p>&copy; 2026 Habesha Restaurant Dresden. All rights reserved.</p>
+      <p>&copy; 2026 Habesha Restaurant Dresden. <span class="lang" data-de="Alle Rechte vorbehalten." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></p>
     </div>
   </footer>
 

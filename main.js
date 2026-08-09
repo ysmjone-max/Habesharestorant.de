@@ -42,3 +42,18 @@ document.querySelectorAll('.glass-card, .glass-panel, .section-title').forEach(e
   el.style.transition = 'all 0.6s ease-out';
   observer.observe(el);
 });
+
+// Language Toggle
+const langToggle = document.getElementById('langToggle');
+let currentLang = 'de';
+
+if (langToggle) {
+  langToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'de' ? 'en' : 'de';
+    langToggle.textContent = currentLang === 'de' ? '🇬🇧 EN' : '🇩🇪 DE';
+    
+    document.querySelectorAll('.lang').forEach(el => {
+      el.textContent = el.getAttribute(`data-${currentLang}`);
+    });
+  });
+}
