@@ -502,8 +502,15 @@ section {
   font-size: 0.9rem;
 }
 .feature-icon {
-  font-size: 2.5rem;
+  width: 48px;
+  height: 48px;
   margin-bottom: 0.2rem;
+  color: #E8C948; /* Golden Yellow */
+}
+
+.badge-icon {
+  width: 14px;
+  height: 14px;
 }
 
 .badges {

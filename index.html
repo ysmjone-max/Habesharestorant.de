@@ -15,6 +15,36 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- SVG Icons Definitions -->
+  <svg style="display: none;">
+    <defs>
+      <symbol id="icon-vegan" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="50" r="44" />
+        <path d="M32,50 L45,63 L65,30" />
+        <path d="M45,63 C65,35 80,25 88,18 C70,35 55,55 45,63 Z" />
+      </symbol>
+      <symbol id="icon-gf" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="50" r="44" />
+        <line x1="50" y1="20" x2="50" y2="80" />
+        <path d="M50,45 C35,45 35,30 50,30 C65,30 65,45 50,45 Z" />
+        <path d="M50,60 C35,60 35,45 50,45 C65,45 65,60 50,60 Z" />
+        <path d="M50,75 C40,75 40,60 50,60 C60,60 60,75 50,75 Z" />
+        <path d="M50,30 C45,20 55,20 50,30 Z" />
+      </symbol>
+      <symbol id="icon-healthy" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="50" r="44" />
+        <path d="M50,75 C50,75 20,55 20,35 A15,15 0 0,1 50,30 A15,15 0 0,1 80,35 C80,55 50,75 50,75 Z" />
+      </symbol>
+      <symbol id="icon-eritrean" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="50" r="44" />
+        <path d="M30,65 C30,85 70,85 70,65 C70,45 58,40 53,20 L47,20 C42,40 30,45 30,65 Z" />
+        <path d="M30,55 C15,55 15,35 45,35" />
+        <path d="M70,55 C85,50 85,40 75,35" />
+        <line x1="25" y1="80" x2="75" y2="80" />
+      </symbol>
+    </defs>
+  </svg>
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">
@@ -52,19 +82,19 @@
   <section class="features-strip">
     <div class="container features-grid">
       <div class="feature-item">
-        <div class="feature-icon">🌱</div>
+        <svg class="feature-icon"><use href="#icon-vegan"></use></svg>
         <span class="lang" data-de="100% Vegan" data-en="100% Vegan">100% Vegan</span>
       </div>
       <div class="feature-item">
-        <div class="feature-icon">🌾</div>
+        <svg class="feature-icon"><use href="#icon-gf"></use></svg>
         <span class="lang" data-de="Glutenfrei" data-en="Gluten Free">Glutenfrei</span>
       </div>
       <div class="feature-item">
-        <div class="feature-icon">🥗</div>
+        <svg class="feature-icon"><use href="#icon-healthy"></use></svg>
         <span class="lang" data-de="Gesunde Mahlzeit" data-en="Healthy Meal">Gesunde Mahlzeit</span>
       </div>
       <div class="feature-item">
-        <div class="feature-icon">🇪🇷</div>
+        <svg class="feature-icon"><use href="#icon-eritrean"></use></svg>
         <span class="lang" data-de="Eritreisches Aroma" data-en="Eritrean Flavour">Eritreisches Aroma</span>
       </div>
     </div>
@@ -104,9 +134,9 @@
               <span style="color: var(--color-primary); font-weight: bold;">€13.00</span>
             </div>
             <div class="badges">
-              <span class="badge badge-vegan"><span class="lang" data-de="Vegan" data-en="Vegan">Vegan</span></span>
-              <span class="badge badge-healthy"><span class="lang" data-de="Gesund" data-en="Healthy">Gesund</span></span>
-              <span class="badge badge-eritrean"><span class="lang" data-de="Eritreisch" data-en="Eritrean">Eritreisch</span></span>
+              <span class="badge badge-vegan"><svg class="badge-icon"><use href="#icon-vegan"></use></svg> <span class="lang" data-de="Vegan" data-en="Vegan">Vegan</span></span>
+              <span class="badge badge-healthy"><svg class="badge-icon"><use href="#icon-healthy"></use></svg> <span class="lang" data-de="Gesund" data-en="Healthy">Gesund</span></span>
+              <span class="badge badge-eritrean"><svg class="badge-icon"><use href="#icon-eritrean"></use></svg> <span class="lang" data-de="Eritreisch" data-en="Eritrean">Eritreisch</span></span>
             </div>
             <p class="lang" data-de="Großer gemischter Teller mit vegan Injera, Allicha, Shiro, 3x Tuntumo, Hamli, Rotkohl und Salat." data-en="Large mixed plate with vegan Injera, Allicha, Shiro, 3x Tuntumo, Hamli, red cabbage and salad.">Großer gemischter Teller mit vegan Injera, Allicha, Shiro, 3x Tuntumo, Hamli, Rotkohl und Salat.</p>
           </div>
@@ -190,9 +220,9 @@
               <span style="color: var(--color-primary); font-weight: bold;">€9.00</span>
             </div>
             <div class="badges">
-              <span class="badge badge-vegan"><span class="lang" data-de="Vegan" data-en="Vegan">Vegan</span></span>
-              <span class="badge badge-gf"><span class="lang" data-de="Glutenfrei" data-en="Gluten Free">Glutenfrei</span></span>
-              <span class="badge badge-healthy"><span class="lang" data-de="Gesund" data-en="Healthy">Gesund</span></span>
+              <span class="badge badge-vegan"><svg class="badge-icon"><use href="#icon-vegan"></use></svg> <span class="lang" data-de="Vegan" data-en="Vegan">Vegan</span></span>
+              <span class="badge badge-gf"><svg class="badge-icon"><use href="#icon-gf"></use></svg> <span class="lang" data-de="Glutenfrei" data-en="Gluten Free">Glutenfrei</span></span>
+              <span class="badge badge-healthy"><svg class="badge-icon"><use href="#icon-healthy"></use></svg> <span class="lang" data-de="Gesund" data-en="Healthy">Gesund</span></span>
             </div>
             <p class="lang" data-de="Gemahlene Kichererbsen mit Gewürzen und afrikanischer Butter." data-en="Ground chickpeas with spices and African butter.">Gemahlene Kichererbsen mit Gewürzen und afrikanischer Butter.</p>
           </div>
@@ -205,9 +235,9 @@
               <span style="color: var(--color-primary); font-weight: bold;">€9.00</span>
             </div>
             <div class="badges">
-              <span class="badge badge-vegan"><span class="lang" data-de="Vegan" data-en="Vegan">Vegan</span></span>
-              <span class="badge badge-gf"><span class="lang" data-de="Glutenfrei" data-en="Gluten Free">Glutenfrei</span></span>
-              <span class="badge badge-healthy"><span class="lang" data-de="Gesund" data-en="Healthy">Gesund</span></span>
+              <span class="badge badge-vegan"><svg class="badge-icon"><use href="#icon-vegan"></use></svg> <span class="lang" data-de="Vegan" data-en="Vegan">Vegan</span></span>
+              <span class="badge badge-gf"><svg class="badge-icon"><use href="#icon-gf"></use></svg> <span class="lang" data-de="Glutenfrei" data-en="Gluten Free">Glutenfrei</span></span>
+              <span class="badge badge-healthy"><svg class="badge-icon"><use href="#icon-healthy"></use></svg> <span class="lang" data-de="Gesund" data-en="Healthy">Gesund</span></span>
             </div>
             <p class="lang" data-de="Rotes Linsengericht." data-en="Red lentil dish.">Rotes Linsengericht.</p>
           </div>
@@ -220,9 +250,9 @@
               <span style="color: var(--color-primary); font-weight: bold;">€9.00</span>
             </div>
             <div class="badges">
-              <span class="badge badge-vegan"><span class="lang" data-de="Vegan" data-en="Vegan">Vegan</span></span>
-              <span class="badge badge-gf"><span class="lang" data-de="Glutenfrei" data-en="Gluten Free">Glutenfrei</span></span>
-              <span class="badge badge-healthy"><span class="lang" data-de="Gesund" data-en="Healthy">Gesund</span></span>
+              <span class="badge badge-vegan"><svg class="badge-icon"><use href="#icon-vegan"></use></svg> <span class="lang" data-de="Vegan" data-en="Vegan">Vegan</span></span>
+              <span class="badge badge-gf"><svg class="badge-icon"><use href="#icon-gf"></use></svg> <span class="lang" data-de="Glutenfrei" data-en="Gluten Free">Glutenfrei</span></span>
+              <span class="badge badge-healthy"><svg class="badge-icon"><use href="#icon-healthy"></use></svg> <span class="lang" data-de="Gesund" data-en="Healthy">Gesund</span></span>
             </div>
             <p class="lang" data-de="Gemüsecurry mit grünen Bohnen, Kartoffeln, Weißkohl, Karotten und Paprika." data-en="Vegetable curry with green beans, potatoes, cabbage, carrots and peppers.">Gemüsecurry mit grünen Bohnen, Kartoffeln, Weißkohl, Karotten und Paprika.</p>
           </div>
@@ -235,9 +265,9 @@
               <span style="color: var(--color-primary); font-weight: bold;">€5.00</span>
             </div>
             <div class="badges">
-              <span class="badge badge-vegan"><span class="lang" data-de="Vegan" data-en="Vegan">Vegan</span></span>
-              <span class="badge badge-gf"><span class="lang" data-de="Glutenfrei" data-en="Gluten Free">Glutenfrei</span></span>
-              <span class="badge badge-healthy"><span class="lang" data-de="Gesund" data-en="Healthy">Gesund</span></span>
+              <span class="badge badge-vegan"><svg class="badge-icon"><use href="#icon-vegan"></use></svg> <span class="lang" data-de="Vegan" data-en="Vegan">Vegan</span></span>
+              <span class="badge badge-gf"><svg class="badge-icon"><use href="#icon-gf"></use></svg> <span class="lang" data-de="Glutenfrei" data-en="Gluten Free">Glutenfrei</span></span>
+              <span class="badge badge-healthy"><svg class="badge-icon"><use href="#icon-healthy"></use></svg> <span class="lang" data-de="Gesund" data-en="Healthy">Gesund</span></span>
             </div>
             <p class="lang" data-de="Mit roten Linsen." data-en="With red lentils.">Mit roten Linsen.</p>
           </div>
